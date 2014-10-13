@@ -2,13 +2,62 @@
     <head>
         <title>henadzit</title>
         <style>
-            body {
-                background-color: black;
-                color: white;
-            }
+span.input {
+	font-family: monospace;
+        font-size: 2em;
+        color: #666;
+}
+span.input:after {
+	content:"_";
+	opacity: 0;
+	animation: cursor 1s infinite;
+}
+@keyframes cursor {
+	0% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+/* styling */
+ html {
+	width: 100%;
+	height: 100%;
+	background: radial-gradient(circle, #fff 0%, #aaa 100%) no-repeat;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+body {
+	text-align: center;
+	display: table;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+#wrap {
+	box-sizing: border-box;
+	display: table-cell;
+	vertical-align: middle;
+} 
+.command {
+    color: #000;
+}
         </style>
     </head>
     <body>
-        <h4>$ dig henadzit.com txt</h4>
+        <div id="wrap">
+            <span class="input">henadzit@world:~$ <span class="command">dig email.henadzit.com TXT +short</span> </span>
+        </div>
     </body>
 </html>
