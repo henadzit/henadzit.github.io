@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>henadzit</title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+        </style>
+    </head>
+    <body>
+    <div id="reviews_widget"></div>
+<script type="text/javascript">
+    var config = {
+      itemName: "HTC One", // output the product name, e.g. 'iPhone 6' or 'HTC One'
+      width: "100%",
+      appId: "540b1ac2a150482788d8652bf8869bd9",
+      locale: "ru",
+      theme: "default"
+    };
+    var xdm = document.createElement('script');
+    xdm.type = 'text/javascript';
+    xdm.src = "http://widget.doreview.ru/easyXDM.min.js";
+    xdm.async = true;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(xdm);
+    xdm.onload = function() {
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.async = true;
+    script.src = "http://widget.doreview.ru/embed.js";
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+  };
+</script>
+    </body>
+</html>
