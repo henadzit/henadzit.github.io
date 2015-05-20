@@ -4,62 +4,30 @@
         <title>henadzit</title>
         <meta charset="UTF-8">
         <style type="text/css">
-span.input {
-	font-family: monospace;
-        font-size: 2em;
-        color: #666;
-}
-span.input:after {
-	content:"_";
-	opacity: 0;
-	animation: cursor 1s infinite;
-}
-@keyframes cursor {
-	0% {
-		opacity: 0;
-	}
-	40% {
-		opacity: 0;
-	}
-	50% {
-		opacity: 1;
-	}
-	90% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0;
-	}
-}
-/* styling */
- html {
-	width: 100%;
-	height: 100%;
-	background: radial-gradient(circle, #fff 0%, #aaa 100%) no-repeat;
-	overflow-x: hidden;
-	overflow-y: hidden;
-}
-body {
-	text-align: center;
-	display: table;
-	width: 100%;
-	height: 100%;
-	overflow-x: hidden;
-	overflow-y: hidden;
-}
-#wrap {
-	box-sizing: border-box;
-	display: table-cell;
-	vertical-align: middle;
-} 
-.command {
-    color: #000;
-}
         </style>
     </head>
     <body>
-        <div id="wrap">
-            <span class="input">henadzit@world:~$ <span class="command">dig email.henadzit.com TXT +short</span> </span>
-        </div>
+    <div id="reviews_widget"></div>
+<script type="text/javascript">
+    var config = {
+      itemName: "HTC One", // output the product name, e.g. 'iPhone 6' or 'HTC One'
+      width: "100%",
+      appId: "540b1ac2a150482788d8652bf8869bd9",
+      locale: "ru",
+      theme: "default"
+    };
+    var xdm = document.createElement('script');
+    xdm.type = 'text/javascript';
+    xdm.src = "http://widget.doreview.ru/easyXDM.min.js";
+    xdm.async = true;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(xdm);
+    xdm.onload = function() {
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.async = true;
+    script.src = "http://widget.doreview.ru/embed.js";
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+  };
+</script>
     </body>
 </html>
