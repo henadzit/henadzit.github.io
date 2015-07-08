@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "3.5% of websites fail one or more times per day"
-date:   2015-06-19 01:45:50
+date:   2015-07-07 01:02:03
 ---
 
 ### Assumptions
@@ -24,7 +24,7 @@ The data was collected and analyzed with a bunch of Python scripts I wrote for t
 
 To show that there is no noise introduced by monitoring nodes themselves I graphed aggregated failures and processing times from both nodes. The failure rate on both nodes was about 60 during the period. That means that ~6% of the sample websites were down in average. After digging into that I found that some of them are actually dead but some of them have anti-bot alghorithms implemented.
 
-The average processing time does not show anything too concerning. The US node shows better latency though which probably can be explained by the fact that most of the examined websites are hosted in the US.
+The average processing time does not show anything too concerning. The US node shows slightly better latency though which probably can be explained by the fact that most of the examined websites are hosted in the US.
 
 ![European node](/images/node_overal_europe.png)
 
@@ -32,11 +32,11 @@ The average processing time does not show anything too concerning. The US node s
 
 ### Looking for failures
 
-Most of assumptions are mentioned in the first paragraph of the post. Basically, the algorithm can be described with the following steps:
+The assumptions have been already mentioned in the first paragraph of the post. Basically, the algorithm can be described with the following steps:
 
-* store failures of websites which have two consecutive failing data points for each monitoring node separately;
+* find failures of websites which have two consecutive failing data points for each monitoring node separately;
 * remove websites which have more than 20% failure rate;
-* find websites which have matching failures (failing data points at the same time).
+* find websites which have matching failures on all nodes (failing data points at the same time).
 
 The algorithm implementation is in [the analysis.py module](https://github.com/henadzit/webhealth/blob/master/webhealth/analysis.py#L42).
 
