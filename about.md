@@ -4,8 +4,8 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+I am not a cat! Stop sending these pictures of boxes. I will not get tricked by that.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+I am Henadzi Tsaryk. You can contact me via email henadzi.tsaryk@gmail.com. Please do not send pictures of boxes I cannot fit in.
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+You can find the source code for this blog at [github.com/henadzit/henadzit.github.io](https://github.com/henadzit/henadzit.github.io).

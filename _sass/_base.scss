@@ -25,6 +25,8 @@ body {
 
 
 
+
+ 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
@@ -201,4 +203,11 @@ pre {
             fill: $grey-color;
         }
     }
+}
+
+
+p.image-title {
+    font-size: $base-font-size;
+    text-align: center;
+    margin-bottom: $spacing-unit / 4; 
 }
