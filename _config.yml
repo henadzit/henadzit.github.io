@@ -1,0 +1,13 @@
+# Site settings
+title: Random notes by henadzit
+email: henadzi.tsaryk@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+    Very random notes by henadzit aka Henadzi Tsaryk. Mostly related
+    to software. At least, that's my plan.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://henadzit.com" # the base hostname & protocol for your site
+twitter_username: henadzit
+github_username:  henadzit
+
+# Build settings
+markdown: kramdown
