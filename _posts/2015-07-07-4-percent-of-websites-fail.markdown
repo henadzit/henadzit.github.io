@@ -10,7 +10,7 @@ date:   2015-07-07 01:02:03
 * 2 monitoring nodes, one in Europe and one in the US;
 * a failure is when a website is considered as failing by both nodes for 2 or more data points (one data point is one minute);
 * a failure is any connection failure or an error HTTP code; 
-* the results were filtered out to exclude obviosly irrelevant data like websites failing more than 20% of checks.
+* the results were filtered out to exclude obviously irrelevant data like websites failing more than 20% of checks.
 
 ### Preamble
 
@@ -22,7 +22,7 @@ The data was collected and analyzed with a bunch of Python scripts I wrote for t
 
 ### Results sanity
 
-To show that there is no noise introduced by monitoring nodes themselves I graphed aggregated failures and processing times from both nodes. The failure rate on both nodes was about 60 during the period. That means that ~6% of the sample websites were down in average. After digging into that I found that some of them are actually dead but some of them have anti-bot alghorithms implemented.
+To show that there is no noise introduced by monitoring nodes themselves I graphed aggregated failures and processing times from both nodes. The failure rate on both nodes was about 60 during the period. That means that ~6% of the sample websites were down in average. After digging into that I found that some of them are actually dead but some of them have anti-bot algorithms implemented.
 
 The average processing time does not show anything too concerning. The US node shows slightly better latency though which probably can be explained by the fact that most of the examined websites are hosted in the US.
 
@@ -59,7 +59,7 @@ Let's examine some of the "winners".
 
 ![indiegogo.com downtime](/images/website_indiegogo.com.png)
 
-If my understanding is correct, *megafilmeshd.net* is a video streaming service used mostly in Brazil. It seems to have scalling problems since it failed during the peak time (the time is UTC on the graph, Rio is 3 hours ahead of UTC).
+If my understanding is correct, *megafilmeshd.net* is a video streaming service used mostly in Brazil. It seems to have scaling problems since it failed during the peak time (the time is UTC on the graph, Rio is 3 hours ahead of UTC).
 
 ![megafilmeshd.net downtime](/images/website_megafilmeshd.net.png)
 
