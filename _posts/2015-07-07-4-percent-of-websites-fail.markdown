@@ -2,6 +2,10 @@
 layout: post
 title:  "3.5% of websites fail one or more times per day"
 date:   2015-07-07 01:02:03
+tags:
+    - Python
+    - IPython
+    - Graphs
 ---
 
 ### Assumptions
